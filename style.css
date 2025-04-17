@@ -79,6 +79,10 @@ body{
         justify-content: space-evenly;
     }
 
+    .navitem{
+        border: 0.2vh solid transparent;
+        padding: 1vw 4vw;
+    }
     .navitem h1{
         font-size: 2.5vw;
         display: none;
@@ -87,6 +91,11 @@ body{
     .navitem img{
         width: 4.5vw;
         height: auto;
+    }
+
+    .navitem:hover{
+        border: 0.2vh solid black;
+        background-color: white;
     }
 }
 
@@ -98,6 +107,11 @@ body{
         border: 0.2vh solid black;
         top: 0vw;
         justify-content: center;
+    }
+
+    .navitem{
+        border: 0.2vh solid transparent;
+        padding: 0vw 2vw;
     }
 
     .navitem h1{
@@ -380,18 +394,22 @@ hr {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
-    padding: 16px;
-  }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 4vw 3vw;
+    gap: 4vw;
+    height: 30vh;
+    place-items: center;
+}
   
   .grid-item {
-    background-color: #007FFF;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+  }
+
+  .grid img{
+    width: auto;
+    height: 6vh;
+    object-fit:contain;
   }
   
 @media screen and (max-width: 768px) {
@@ -403,7 +421,7 @@ hr {
         font-weight: 300;
         margin: 0;
         font-family: 'Inter';
-        font-size: 3.5vh;
+        font-size: 3vh;
         color: #007FFF;
         text-transform: uppercase;
     }
@@ -424,6 +442,11 @@ hr {
     }
 }
 
+@media (min-width: 1024px){
+    .grid{
+        display: none;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .skills h2{
@@ -447,7 +470,13 @@ hr {
 
     .skillsContainer{
         justify-content: start;
+        gap: 1em;
         /* background-color: azure; */
+    }
+    
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
