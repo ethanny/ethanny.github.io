@@ -208,12 +208,21 @@
           <h1>Hit me up!</h1>
           <img src="assets/images/stamp1.png" alt="Stamp" />
         </div>
-        <form class="formsContainer">
+
+        <form
+          class="formsContainer"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="1676a2a2-a106-4778-87fc-bfa4660711c5"
+          />
           <div style="display: flex; flex-direction: row; gap: 1vw">
             <label for="email">From:</label>
             <input
-              type="text"
-              id="email"
+              type="email"
               name="email"
               placeholder="Enter your email"
               required
@@ -224,6 +233,7 @@
 
           <h2>Dear Ethan,</h2>
           <textarea
+            name="message"
             class="expandable-textarea"
             placeholder="Type something..."
             required
@@ -231,6 +241,7 @@
 
           <hr />
 
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <input type="submit" value="Submit" class="submit" />
         </form>
       </div>

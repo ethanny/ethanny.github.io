@@ -436,6 +436,10 @@ hr {
         /* background-color: azure; */
     }
 
+    .skills-content{
+        transform: translateY(12vw);
+    }
+
     .app-icon{
         display: none;
     }
