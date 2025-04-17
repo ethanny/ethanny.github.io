@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ethan.ppt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="#hero" class="navitem">
+        <img src="assets/images/hello.svg" alt="Hello Icon" />
+        <h1>Hello</h1>
+      </a>
+
+      <a href="#skills" class="navitem">
+        <img src="assets/images/skills.svg" alt="Skills Icon" />
+        <h1>Skills</h1>
+      </a>
+
+      <a href="" class="navitem">
+        <img
+          src="assets/images/projects.svg"
+          alt="Projects Icon"
+          class="navicon"
+        />
+        <h1>Projects</h1>
+      </a>
+
+      <a href="#forms" class="navitem">
+        <img src="assets/images/mail.svg" alt="Contact Icon" />
+        <h1>Contact</h1>
+      </a>
+    </nav>
+
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div>
+          <h1>
+            Hello, I'm <br />
+            Ethan
+          </h1>
+          <h2>Technology and Creativity Personified</h2>
+        </div>
+
+        <div>
+          <img
+            src="assets/images/head.svg"
+            id="anchor"
+            alt="Ethan's head"
+            class="ethan"
+          />
+        </div>
+
+        <div id="anchor" class="face">
+          <img src="assets/images/face.svg" alt="Ethan's head" class="ethan" />
+          <img
+            src="assets/images/starL.svg"
+            alt="star left"
+            class="pulsing star"
+          />
+          <img
+            src="assets/images/starR.svg"
+            alt="star right"
+            class="pulsing star right"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="skills-content">
+        <h1>Skills Menu</h1>
+
+        <div class="skillsContainer">
+          <div class="skillContainer">
+            <div class="skillIcon">
+              <div class="skill">
+                <img src="assets/images/illustrate'.svg" alt="Illustrate" />
+                <h2>Digital Illustration</h2>
+              </div>
+              <img
+                src="assets/images/affinity.png"
+                alt="Affinity Designer"
+                class="app-icon"
+              />
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="skillContainer">
+            <div class="skillIcon">
+              <div class="skill">
+                <img src="assets/images/graphic.svg" alt="Graphic Design" />
+                <h2>Graphic Design</h2>
+              </div>
+              <img
+                src="assets/images/ps.png"
+                alt="Adobe Photoshop"
+                class="app-icon"
+              />
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="skillContainer">
+            <div class="skillIcon">
+              <div class="skill">
+                <img src="assets/images/motion.svg" alt="Motion" />
+                <h2>Motion Graphics Design</h2>
+              </div>
+              <img
+                src="assets/images/ae.png"
+                alt="Adobe After Effects"
+                class="app-icon"
+              />
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="skillContainer">
+            <div class="skillIcon">
+              <div class="skill">
+                <img src="assets/images/ui.svg" alt="User Interface" />
+                <h2>UI/UX Design</h2>
+              </div>
+              <img src="assets/images/figma.png" alt="Figma" class="app-icon" />
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="skillContainer">
+            <div class="skillIcon">
+              <div class="skill">
+                <img src="assets/images/phone.svg" alt="Phone" />
+                <h2>Mobile App Development</h2>
+              </div>
+              <img src="assets/images/figma.png" alt="Figma" class="app-icon" />
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="grid">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+            <div class="grid-item">Item 5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forms" class="forms">
+      <div class="formsContent">
+        <div class="formsHeader">
+          <h1>Hit me up!</h1>
+          <img src="assets/images/stamp1.png" alt="Stamp" />
+        </div>
+        <form class="formsContainer">
+          <div style="display: flex; flex-direction: row; gap: 1vw">
+            <label for="email">From:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <hr />
+
+          <h2>Dear Ethan,</h2>
+          <textarea
+            class="expandable-textarea"
+            placeholder="Type something..."
+            required
+          ></textarea>
+
+          <hr />
+
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
