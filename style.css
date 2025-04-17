@@ -101,7 +101,6 @@ body{
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .navbar{
-        background-color: #007FFF;
         width: 100%;
         border-radius: 0px;
         border: 0.2vh solid black;
@@ -198,7 +197,7 @@ body{
   }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1440px) {
 
     .hero {
         align-items: center;
@@ -267,7 +266,7 @@ body{
 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1440px) {
     .ethan{
         width: 45vh;
         left: 50%;

@@ -15,6 +15,10 @@ document.addEventListener('mousemove', (e) => {
 
     const faces = document.querySelectorAll('.face');
 faces.forEach(face => {
+  if (window.innerWidth > 768) {
   face.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  }else{
+    face.style.transform = `translate(0px, 0px)`;
+  }
 });
 })
