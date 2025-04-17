@@ -5,7 +5,7 @@
     const anchorY = rect.top + rect.height / 2;
 
     
-
+    if (window.innerWidth >= 1024) {
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
@@ -18,3 +18,4 @@ faces.forEach(face => {
   face.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 });
 })
+    }
