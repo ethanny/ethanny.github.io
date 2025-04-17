@@ -5,7 +5,12 @@
     const anchorY = rect.top + rect.height / 2;
 
     
-
+    document.addEventListener("DOMContentLoaded", () => {
+      const faces = document.querySelectorAll('.face');
+      faces.forEach(face => {
+        face.style.transform = `translate(0px, 0px)`;
+      });
+    });
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
