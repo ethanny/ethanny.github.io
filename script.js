@@ -17,5 +17,5 @@ document.addEventListener('mousemove', (e) => {
 faces.forEach(face => {
   face.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 });
-})
+});
     }
