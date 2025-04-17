@@ -76,15 +76,16 @@ body{
         border-radius: 0px;
         border: 0.2vh solid black;
         top: 0vw;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .navitem h1{
-        font-size: 3.5vw;
+        font-size: 2.5vw;
+        display: none;
     }
 
     .navitem img{
-        width: 3.5vw;
+        width: 4.5vw;
         height: auto;
     }
 }
