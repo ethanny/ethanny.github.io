@@ -159,13 +159,13 @@ body{
     }
 
     .hero h1{
-        font-size: 11vh; 
+        font-size: 20vw; 
         -webkit-text-stroke: 0.5vw black;
         text-align: center;
     }
 
     .hero h2{
-        margin-top: 4vh;
+        margin-top: 4vw;
         padding: 0.5vw 3vw;
         font-weight: 300;
         font-size: 3.5vw;
