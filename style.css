@@ -21,6 +21,7 @@
 html {
     scroll-behavior: smooth;
   }
+  
 
 body{
     margin: 0;
@@ -197,7 +198,7 @@ body{
   }
 
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     .hero {
         align-items: center;
@@ -221,7 +222,7 @@ body{
     .hero-content {
         margin-left: 6vw;
         margin-right: 6vw;
-        transform: translateY(10vw);
+        transform: translateY(5vw);
         flex-direction: column; 
         justify-content: center;
         align-items: center;
@@ -266,7 +267,7 @@ body{
 
 }
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .ethan{
         width: 45vh;
         left: 50%;
@@ -309,8 +310,8 @@ body{
 }
 
 .skills-content{
+    height: 100%;
     width: 100%;
-    transform: translateY(10vw);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -318,28 +319,30 @@ body{
 }
 
 .skillsContainer{
-    height: 60vh;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* background-color: azure; */
 }
 
 .skills h1{
-    font-size: 10vw; 
+    height: 30%;
+    font-size: 14vh; 
     margin: 0px;
-    line-height: 1;
     letter-spacing: -0.04em;
     font-family: 'PPEditorial';
     color: #007FFF;
     padding: 0vh 3vw;
+    display: flex;
+    align-items: end;
 }
 
 .skills h2{
     font-weight: 300;
     margin: 0;
     font-family: 'Inter';
-    font-size: 2.5vw;
+    font-size: 5vh;
     color: #007FFF;
     text-transform: uppercase;
 }
@@ -359,24 +362,26 @@ body{
 }
 
 .skillIcon img{
-    width: 2.5vw;
+    width: 5vh;
     height: auto;
     object-fit: contain;
 }
 
 .skillContainer{
     box-sizing: border-box;
-    padding: 1vw 3vw;
+    padding: 0vh 3vw;
     display: flex;
     flex-direction: column;
-    gap: 0.7em;
+    gap: 1vh;
     /* background-color: aqua; */
 }
 
+@media screen and (min-width: 768px) {
 .skillContainer:hover h2{
     color: white;
     background-color: #007FFF;
     
+}
 }
 
 .app-icon{
@@ -413,14 +418,14 @@ hr {
   
 @media screen and (max-width: 768px) {
     .skills h1{
-        font-size: 18vw; 
-        padding: 2vw 4vw;
+        height: 25%;
+        font-size: 12vh; 
     }
     .skills h2{
         font-weight: 300;
         margin: 0;
         font-family: 'Inter';
-        font-size: 3vh;
+        font-size: 2.5vh;
         color: #007FFF;
         text-transform: uppercase;
     }
@@ -432,13 +437,10 @@ hr {
     }
 
     .skillsContainer{
-        justify-content: start;
+        height: 75%;
         /* background-color: azure; */
     }
 
-    .skills-content{
-        transform: translateY(12vw);
-    }
 
     .app-icon{
         display: none;
@@ -452,6 +454,10 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .skills h1{
+        font-size: 16vh; 
+    }
+    
     .skills h2{
         font-weight: 300;
         margin: 0;
@@ -483,6 +489,135 @@ hr {
     }
 }
 
+.projects{
+    margin: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+
+.projects-content{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.projects h1{
+    height: 30%;
+    font-size: 14vh; 
+    margin: 0px;
+    letter-spacing: -0.04em;
+    font-family: 'PPEditorial';
+    color: #007FFF;
+    padding: 0vh 3vw;
+    display: flex;
+    align-items: end;
+}
+
+.item {
+    height: 100%;
+    flex: 1; 
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;       
+    background-size: cover; 
+    transition: 0.2s ease-in-out;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#Folderly{
+    background-image: url('assets/images/folderly.png');
+}
+
+#UPSee{
+    background-image: url('assets/images/upsee.png');
+}
+
+#SmartCY{
+    background-image: url('assets/images/smartcy.png');
+}
+
+.item:hover {
+    clip-path: circle(100%);
+}
+
+@media screen and (min-width: 1024px) {
+    #UPSee:hover{
+        background-image: url('assets/images/upseeShown.png');
+    }
+
+    #SmartCY:hover{
+        background-image: url('assets/images/smartcyShown.png');
+    }
+
+    #Folderly:hover{
+        background-image: url('assets/images/folderlyShown.png');
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects h1{
+        height: 25%;
+        font-size: 12vh; 
+    }
+
+    .projects-content{
+        height: 75%;
+    }
+
+    .item {
+        clip-path: none;
+    }
+
+    .projects-content{
+        flex-direction: column;
+    }
+
+    #Folderly{
+        background-image: url('assets/images/folderlyMobile.png');
+    }
+
+    #UPSee{
+        background-image: url('assets/images/upseeMobile.png');
+    }
+    
+    #SmartCY{
+        background-image: url('assets/images/smartcyMobile.png');
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .item {
+        clip-path: none;
+    }
+
+    .projects h1{
+        font-size: 16vh; 
+    }
+    
+    .projects-content{
+        flex-direction: column;
+    }
+
+    #Folderly{
+        background-image: url('assets/images/folderlyMobile.png');
+    }
+
+    #UPSee{
+        background-image: url('assets/images/upseeMobile.png');
+    }
+    
+    #SmartCY{
+        background-image: url('assets/images/smartcyMobile.png');
+    }
+}
+
+
+
 .forms{
     background-color: #FFFFE9;
     width: 100vw;
@@ -490,16 +625,19 @@ hr {
 }
 
 .formsHeader{
+    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: end;
     /* background-color: aqua; */
 }
 
 .formsHeader img{
+    padding: 0vh 4vw;
     width: auto;
-    height: 8vw;
+    height: 14vh;
     object-fit: contain;
     transform: rotate(3deg);
     transition: 0.3s ease;
@@ -509,25 +647,23 @@ hr {
     transform: scale(1.2); 
 }
 
-
 .formsContent{
     box-sizing: border-box;
-    padding: 0vh 4vh;
+    padding: 4vh 4vw;
+    height: 70%;
     width: 100%;
-    transform: translateY(8vw);
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     z-index: 1;
     gap: 5vh;
-    /* background-color: aqua; */
 }
 
 .forms h1{
-    height: 100%;
-    font-size: 8vw; 
+    font-size: 14vh; 
+    padding: 0vh 4vw;
     margin: 0px;
-    line-height: 1;
     letter-spacing: -0.04em;
     font-family: 'Meow';
     color: #B90327;
@@ -537,7 +673,7 @@ hr {
     font-weight: 300;
     margin: 0;
     font-family: 'Inter';
-    font-size: 2.5vw;
+    font-size: 5vh;
     color: #B90327;
 }
 
@@ -545,7 +681,7 @@ hr {
     font-weight: 300;
     margin: 0;
     font-family: 'Inter';
-    font-size: 2.5vw;
+    font-size: 5vh;
     color: #B90327;
     background: none;
     border: none;
@@ -562,7 +698,7 @@ hr {
     width: 100%;
     border: none;
     margin: 0;
-    border-top: 0.3vw dashed #B90327;
+    border-top: 0.3vh dashed #B90327;
 }
 
 form{
@@ -590,48 +726,51 @@ textarea::placeholder {
 
 @media screen and (max-width: 768px) {
     .forms h1{
-        font-size: 12vw; 
+        font-size: 8vh; 
     }
 
     .formsHeader img{
-        height: 12vw;
-    }
-
-    .formsContent{
-        transform: translateY(12vw);
+        height: 8vh;
     }
 
     .forms h2, label{
-        font-size: 5vw;
+        font-size: 2.5vh;
     }
 
     .forms input, textarea{
-        font-size: 5vw;
+        font-size: 2.5vh;
     }
 
     .expandable-textarea {
         height: 40vh;
     }
+
+    .formsHeader{
+        height: 20%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .formsHeader{
+        height: 20%;
+    }
+
     .forms h1{
         /* background-color: black; */
-        font-size: 10vw; 
+        font-size: 10vh; 
     }
 
     .formsHeader img{
-        height: 10vw;
+        height: 10vh;
     }
 
     .forms h2, label{
-        font-size: 3vw;
+        font-size: 3vh;
     }
 
     .forms input, textarea{
-        font-size: 3vw;
+        font-size: 3vh;
     }
-
 
     .expandable-textarea {
         height: 40vh;

@@ -19,7 +19,7 @@
         <h1>Skills</h1>
       </a>
 
-      <a href="" class="navitem">
+      <a href="#projects" class="navitem">
         <img
           src="assets/images/projects.svg"
           alt="Projects Icon"
@@ -71,7 +71,7 @@
 
     <section id="skills" class="skills">
       <div class="skills-content">
-        <h1>Skills Menu</h1>
+        <h1>Skills</h1>
 
         <div class="skillsContainer">
           <div class="skillContainer">
@@ -202,13 +202,22 @@
       </div>
     </section>
 
-    <section id="forms" class="forms">
-      <div class="formsContent">
-        <div class="formsHeader">
-          <h1>Hit me up!</h1>
-          <img src="assets/images/stamp1.png" alt="Stamp" />
-        </div>
+    <section id="projects" class="projects">
+      <h1>Projects</h1>
+      <div class="projects-content">
+        <div id="Folderly" class="item"></div>
+        <div id="UPSee" class="item"></div>
+        <div id="SmartCY" class="item"></div>
+      </div>
+    </section>
 
+    <section id="forms" class="forms">
+      <div class="formsHeader">
+        <h1>Hit me up!</h1>
+        <img src="assets/images/stamp1.png" alt="Stamp" />
+      </div>
+      
+      <div class="formsContent">
         <form
           class="formsContainer"
           action="https://api.web3forms.com/submit"
@@ -241,7 +250,12 @@
 
           <hr />
 
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
           <input type="submit" value="Submit" class="submit" />
         </form>
       </div>
