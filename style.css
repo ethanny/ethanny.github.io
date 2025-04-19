@@ -524,9 +524,9 @@ hr {
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;       
-    background-size: cover; 
+    background-size: contain; 
     transition: 0.2s ease-in-out;
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(45% at 50% 50%);
 }
 
 #Folderly{
@@ -546,16 +546,22 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+    #Folderly:hover{
+        background-image: 
+        url('assets/images/folderlyShown.png'),
+        linear-gradient(to bottom, #4CA6FF, white);
+    }
+
     #UPSee:hover{
-        background-image: url('assets/images/upseeShown.png');
+        background-image: 
+        url('assets/images/upseeShown.png'),
+        linear-gradient(to bottom, #B2D789, white);
     }
 
     #SmartCY:hover{
-        background-image: url('assets/images/smartcyShown.png');
-    }
-
-    #Folderly:hover{
-        background-image: url('assets/images/folderlyShown.png');
+        background-image: 
+        url('assets/images/smartcyShown.png'),
+        linear-gradient(to bottom, #FFF99D, white);
     }
 }
 
@@ -578,15 +584,21 @@ hr {
     }
 
     #Folderly{
-        background-image: url('assets/images/folderlyMobile.png');
+        background-image: 
+        url('assets/images/folderlyMobile.png'),
+        linear-gradient(to bottom, #4CA6FF, white);
     }
 
     #UPSee{
-        background-image: url('assets/images/upseeMobile.png');
+        background-image: 
+        url('assets/images/upseeMobile.png'),
+        linear-gradient(to bottom, #B2D789, white);
     }
     
     #SmartCY{
-        background-image: url('assets/images/smartcyMobile.png');
+        background-image: 
+        url('assets/images/smartcyMobile.png'),
+        linear-gradient(to bottom, #FFF99D, white);
     }
 }
 
@@ -604,15 +616,21 @@ hr {
     }
 
     #Folderly{
-        background-image: url('assets/images/folderlyMobile.png');
+        background-image: 
+        url('assets/images/folderlyMobile.png'),
+        linear-gradient(to bottom, #4CA6FF, white);
     }
 
     #UPSee{
-        background-image: url('assets/images/upseeMobile.png');
+        background-image: 
+        url('assets/images/upseeMobile.png'),
+        linear-gradient(to bottom, #B2D789, white);
     }
     
     #SmartCY{
-        background-image: url('assets/images/smartcyMobile.png');
+        background-image: 
+        url('assets/images/smartcyMobile.png'),
+        linear-gradient(to bottom, #FFF99D, white);
     }
 }
 
