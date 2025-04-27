@@ -220,6 +220,7 @@
 
       <div class="formsContent">
         <form
+          id = "myForm"
           class="formsContainer"
           action="https://api.web3forms.com/submit"
           method="POST"
@@ -251,14 +252,11 @@
 
           <hr />
 
-          <input
-            type="checkbox"
-            name="botcheck"
-            class="hidden"
-            style="display: none"
-          />
+          <div class="h-captcha" data-captcha="true" data-theme="light"></div>
+
           <input type="submit" value="Submit" class="submit" />
         </form>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
       </div>
     </section>
 

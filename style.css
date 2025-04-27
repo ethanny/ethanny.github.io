@@ -710,7 +710,7 @@ hr {
 }
 
 .expandable-textarea {
-    height: 25vh;
+    height: 10vh;
     width: 100%;
     resize: vertical; 
 }
@@ -763,7 +763,7 @@ textarea::placeholder {
     }
 
     .expandable-textarea {
-        height: 40vh;
+        height: 30vh;
     }
 
     .formsHeader{
@@ -794,7 +794,7 @@ textarea::placeholder {
     }
 
     .expandable-textarea {
-        height: 40vh;
+        height: 30vh;
     }
 }
 

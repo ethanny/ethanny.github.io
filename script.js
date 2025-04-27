@@ -27,3 +27,59 @@ faces.forEach(face => {
   }
 });
 })
+
+const form = document.getElementById('myForm');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // prevent default form submit
+
+    const formData = new FormData(form);
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+      alert("Please fill out captcha field");
+      return; 
+    }  
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+      });
+
+      if (response.ok) {
+        // Form successfully submitted
+        alert('Form submitted successfully!');
+        form.reset(); // <-- clear inputs
+
+        if (typeof hcaptcha !== 'undefined' && hcaptcha.reset) {
+          hcaptcha.reset(); // Reset the captcha
+        }
+      } else {
+        alert('Form submission failed.');
+      }
+      
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Something went wrong.');
+    }
+  });
+
+  function setCaptchaTheme() {
+    const hCaptchaElement = document.querySelector('.h-captcha'); 
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+      hCaptchaElement.setAttribute('data-theme', 'dark');
+    } else {
+
+      hCaptchaElement.setAttribute('data-theme', 'light');
+    }
+  }
+  
+  setCaptchaTheme();
+  
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+
+    setCaptchaTheme();
+  });
